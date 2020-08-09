@@ -1,0 +1,225 @@
+<!-- <div class="form-group">
+    <label for="nameTrainer">Name Trainer</label>
+    <input required value="<%= trainer.nameTrainer %>" type="text" name="nameTrainer" id="nameTrainer"
+        class="form-control">
+
+</div>
+<div class="form-group">
+    <label for="Project">Project</label>
+    <textarea name="project" id="project" class="form-control"><%= trainer.project %></textarea>
+
+</div>
+<div class="form-group">
+    <label for="Review">Review</label>
+    <textarea name="review" id="review" class="form-control" required><%= trainer.review %></textarea>
+</div>
+<div class="form-group">
+    <label for="Avatar">Avatar</label>
+    <input type="file" name="avatar" id="Avatar" class="form-control" value="<%= trainer.avatar %>" accept="image/png, image/jpeg">
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer</title>
+    <link type="text/css" href="css/style4.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<title>Nhập thông tin SV </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- css -->
+
+<link href="css/style4.css" rel='stylesheet' type='text/css' media="all" />
+<!-- /css -->
+<style>
+
+div {
+    display: block;
+}
+    .clear {
+        clear:both;
+    }
+    
+    
+    img {
+        max-width:100%;
+    }
+    
+    
+    
+    body {
+        background:url(../images/banner.jpg) no-repeat;
+        background-attachment:fixed;
+        background-position:center;
+        background-size:cover;
+    
+        font-family: 'Raleway', sans-serif;
+        font-weight:300;
+    }
+    
+    h1.NTT {
+        font-size:50px;
+        color:#fff;
+        padding:40px 0;
+        text-align:center;
+        
+        text-transform:uppercase;
+    }
+    .content-NTT {
+        background-color:#202123;
+        width:70%;
+        margin:20px auto 50px;
+        padding:0;
+    }
+    .content-NTT .content-agile1 {
+        width: 50%;
+        float: left;
+        background: url(../images/content.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 555px;
+    }
+    h2.agileits1 {
+        font-size: 40px;
+        font-weight: normal;
+        color: #fff;
+        text-align: Center;
+        padding: 200px 0 15px;
+        text-transform: uppercase;
+        font-family: 'Monoton', cursive;
+    }
+    
+    .content-NTT .content-agile2 {
+        width: 50%;
+        float: left;
+        padding-top: 25px;
+        /* background-color: rgb(190, 90, 90); */
+        background-position: center;
+        background-size: cover;
+        height: 530px;
+        
+    }
+ 
+    input#nameTrainer, input#email, input#ngaysinh, input#msv,input#avatar {
+    width: 300px;
+    height: 50px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    background-color: transparent;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    display: block;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+}
+    .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: #d6dfe9; */
+    background-color: #202123;
+    background-clip: padding-box;
+    border: 1px solid #202123;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+    input.submit {
+        width: 335px;
+        margin: 30px auto;
+        display: block;
+        height: 50px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: normal;
+        color: #fff;
+        background-color:#3970b0;
+        border-color: transparent;
+        font-family: 'Raleway', sans-serif;
+    
+        cursor:pointer;
+    }
+    input.submit:hover {
+        color: #fff;
+        background-color:#168a39;
+    }
+ 
+     </style>
+    
+</head>
+<body>
+<h1 class="NTT">NHẬP THÔNG TIN SINH VIÊN</h1>
+<div class="content-NTT">
+	<div class="content-agile1">
+		<h2 class="agileits1">Official</h2>
+		<!-- <p class="agileits2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+	</div>
+	<div class="content-agile2">
+		
+			<div class="form-control"> 
+				<input required value="<%= trainer.nameTrainer %>" type="text" name="nameTrainer" id="nameTrainer" placeholder="Tên sinh viên" title="Nhập họ tên của bạn" >
+			</div>
+
+			<div class="form-control ">	
+				<input required value="<%= trainer.email %>"type="email" id="email" name="email" placeholder="mail@example.com" title=" email thường dùng" required="">
+			</div>
+
+	
+			
+			<div class="form-control ">	
+				<input required value="<%= trainer.ngaysinh %>"type="date" id="ngaysinh" name="bday"   title="Hãy chọn ngày sinh của bạn"required=""max="2020-12-31"><br><br>
+				
+			</div>	
+
+			<div class="form-control">	
+				<input required value="<%= trainer.msv %>" type="text" id="msv" name="msv" placeholder="Mã sinh viên">
+            </div>		
+            
+            <div class="form-control">	
+				<input type="file" name="avatar" id="Avatar" class="form-control" value="<%= trainer.avatar %>" accept="image/png, image/jpeg">
+			</div>	
+			
+            <input type="submit" class="submit" value="submit">
+            <a href="/" class="btn btn-secondary"    height="50px";>Cancel</a>
+            
+
+            
+
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>
